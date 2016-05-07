@@ -74,6 +74,14 @@ super + y
 super + g
     bspc node -s biggest
 
+# rotate the windows on the current desktop 90 degrees
+super + shift + {period,comma}
+    bspc node @focused:/ -R {90,270}
+
+# equalize or balance the split ratios of the windows on the current desktop
+super + {_,shift + }e
+    bspc node @focused:/ -{E,B}
+
 #
 # state/flags
 #

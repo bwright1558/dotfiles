@@ -19,7 +19,7 @@ XF86AudioLowerVolume
     amixer set Master 2%-
 
 # raise the volume
-XF86AudioRaseVolume
+XF86AudioRaiseVolume
     amixer set Master 2%+
 
 # mute/unmute the audio speakers

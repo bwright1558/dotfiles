@@ -16,3 +16,9 @@ set expandtab
 set shiftwidth=4
 set smartindent
 set tabstop=4
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
+
+hi Folded ctermfg=8 ctermbg=0

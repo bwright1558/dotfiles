@@ -12,6 +12,8 @@ let g:airline_symbols = get(g:,'airline_symbols',{})
 let g:airline_symbols.maxlinenr = ''
 
 set background=dark
+set nowrap
+set number
 set expandtab
 set shiftwidth=4
 set smartindent
@@ -21,4 +23,9 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=1
 
-hi Folded ctermfg=8 ctermbg=0
+hi Folded ctermbg=0 ctermfg=8
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l

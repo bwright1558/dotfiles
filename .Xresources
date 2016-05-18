@@ -5,45 +5,61 @@ URxvt.letterSpace: -2
 URxvt.perl-ext-common: default,matcher,selection-to-clipboard
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
+URxvt.intensityStyles: false
 
-! Base16 harmonic16
-! Scheme: Jannik Siebert (https://github.com/janniks)
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
 
-#define base00 #0b1c2c
-#define base01 #223b54
-#define base02 #405c79
-#define base03 #627e99
-#define base04 #aabcce
-#define base05 #cbd6e2
-#define base06 #e5ebf1
-#define base07 #f7f9fb
-#define base08 #bf8b56
-#define base09 #bfbf56
-#define base0A #8bbf56
-#define base0B #56bf8b
-#define base0C #568bbf
-#define base0D #8b56bf
-#define base0E #bf568b
-#define base0F #bf5656
+*background:            [97]S_base03
+*foreground:            S_base0
+*fadeColor:             S_base03
+*cursorColor:           S_base1
+*pointerColorBackground:S_base01
+*pointerColorForeground:S_base1
 
-*.foreground:   base05
-*.background:   [95]#000000
-*.cursorColor:  base05
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
 
-*.color0:       base00
-*.color1:       base08
-*.color2:       base0B
-*.color3:       base0A
-*.color4:       base0D
-*.color5:       base0E
-*.color6:       base0C
-*.color7:       base05
+!! black dark/light
+*color0:                S_base02
+*color8:                S_base03
 
-*.color8:       base03
-*.color9:       base09
-*.color10:      base01
-*.color11:      base02
-*.color12:      base04
-*.color13:      base06
-*.color14:      base0F
-*.color15:      base07
+!! red dark/light
+*color1:                S_red
+*color9:                S_orange
+
+!! green dark/light
+*color2:                S_green
+*color10:               S_base01
+
+!! yellow dark/light
+*color3:                S_yellow
+*color11:               S_base00
+
+!! blue dark/light
+*color4:                S_blue
+*color12:               S_base0
+
+!! magenta dark/light
+*color5:                S_magenta
+*color13:               S_violet
+
+!! cyan dark/light
+*color6:                S_cyan
+*color14:               S_base1
+
+!! white dark/light
+*color7:                S_base2
+*color15:               S_base3

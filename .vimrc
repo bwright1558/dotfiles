@@ -33,6 +33,7 @@ set tabstop=4
 set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
+set clipboard=unnamedplus
 set mouse=a
 
 nnoremap j gj

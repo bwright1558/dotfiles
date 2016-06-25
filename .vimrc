@@ -5,6 +5,9 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'ervandew/supertab'
+Plug 'mattn/emmet-vim'
+Plug 'mxw/vim-jsx'
+Plug 'pangloss/vim-javascript'
 Plug 'raimondi/delimitmate'
 Plug 'rking/ag.vim'
 Plug 'terryma/vim-multiple-cursors'
@@ -20,6 +23,8 @@ let g:airline_powerline_fonts = 1
 let g:airline_symbols = get(g:,'airline_symbols',{})
 let g:airline_symbols.maxlinenr = ''
 
+let g:jsx_ext_required = 0
+
 colorscheme solarized
 set updatetime=250
 set background=dark
@@ -34,8 +39,17 @@ set tabstop=4
 set foldmethod=indent
 set foldnestmax=10
 set nofoldenable
-set clipboard=unnamedplus
 set mouse=a
+
+if has('mouse_sgr')
+    set ttymouse=sgr
+endif
+
+if has('macunix')
+    set clipboard=unnamed
+else
+    set clipboard=unnamedplus
+endif
 
 nnoremap j gj
 nnoremap k gk

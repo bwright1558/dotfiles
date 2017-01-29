@@ -16,7 +16,7 @@ URxvt.intensityStyles: false
 #define S_base2         #eee8d5
 #define S_base3         #fdf6e3
 
-URxvt.background:       [97]S_base03
+URxvt.background:       [95]S_base03
 *foreground:            S_base0
 *fadeColor:             S_base03
 *cursorColor:           S_base1

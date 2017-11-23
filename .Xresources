@@ -1,7 +1,7 @@
 URxvt.depth: 32
 URxvt.scrollBar: false
 URxvt.font: xft:DejaVu Sans Mono for Powerline:size=13
-URxvt.letterSpace: -2
+URxvt.letterSpace: -1
 URxvt.perl-ext-common: default,matcher,selection-to-clipboard
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1

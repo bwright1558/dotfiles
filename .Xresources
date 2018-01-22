@@ -1,3 +1,5 @@
+!NOTE: st terminal doesn't use the .Xresources file.
+!      This file only exists for reference.
 URxvt.depth: 32
 URxvt.scrollBar: false
 URxvt.font: xft:DejaVu Sans Mono for Powerline:size=13

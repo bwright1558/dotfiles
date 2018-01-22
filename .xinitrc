@@ -35,7 +35,6 @@ fi
 xsetroot -cursor_name left_ptr
 feh --no-fehbg --bg-fill $HOME/pictures/wallpaper.jpg
 # feh --no-fehbg --bg-fill $HOME/pictures/wallpaper.png
-urxvtd -q -f -o
 compton -I 0.075 -O 0.075 -e 0.85 -fb
 
 exec bspwm -c $HOME/.config/bspwm/bspwmrc

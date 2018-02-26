@@ -7,8 +7,8 @@ super + Return
     st
 
 # program launcher
-super + {_,shift + }space
-    {dmenu_run,passmenu --type} -b -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#859900' -fn '-misc-dejavu sans mono-medium-r-normal--0-0-0-0-m-0-iso8859-1'
+super + space
+    dmenu_run -b -nb '#002b36' -nf '#839496' -sb '#073642' -sf '#859900' -fn '-misc-dejavu sans mono-medium-r-normal--0-0-0-0-m-0-iso8859-1'
 
 # make sxhkd reload its configuration files:
 super + Escape

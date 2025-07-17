@@ -1,0 +1,18 @@
+# Theme
+theme = catppuccin-mocha.conf
+
+# Transparent background with blur
+background-opacity = 0.70
+background-blur = 50
+
+# Fonts
+font-family = "JetBrainsMonoNL Nerd Font Mono"
+font-size = 17
+
+# Scrollback
+scrollback-limit = 100000
+
+# iTerm2 behavior and appearance (because that's where I'm coming from)
+window-inherit-working-directory = false
+macos-titlebar-style = "tabs"
+auto-update = "download"

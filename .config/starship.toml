@@ -1,0 +1,126 @@
+format = "$username$hostname$directory${custom.root_indicator}$character"
+right_format = "$status$git_branch$git_commit$git_state$git_status"
+
+continuation_prompt = "[∙](bright-black) "
+scan_timeout = 30
+command_timeout = 500
+add_newline = false
+follow_symlinks = true
+palette = "catppuccin_mocha"
+
+#################################################
+# Main Prompt
+#################################################
+
+[username]
+disabled = false
+format = "[$user]($style)"
+style_user = "bright-red"
+detect_env_vars = ["SSH_TTY"]
+
+[hostname]
+disabled = false
+format = "[@](white)[$hostname]($style) "
+style = "yellow"
+ssh_only = true
+detect_env_vars = ["SSH_TTY"]
+
+[directory]
+disabled = false
+format = "[$path]($style) "
+read_only = ""
+style = "blue"
+fish_style_pwd_dir_length = 1
+
+[custom.root_indicator]
+when = "fish_is_root_user"
+format = "[#](bold red) "
+shell = ["fish"]
+
+[character]
+disabled = false
+
+#################################################
+# Right Prompt
+#################################################
+
+[status]
+disabled = false
+symbol = "✘"
+map_symbol = false
+pipestatus = false
+style = "red"
+format = "[$symbol $status]($style) "
+
+[git_branch]
+disabled = false
+format = "[$symbol$branch(:$remote_branch)]($style)"
+style = "green"
+
+[git_commit]
+disabled = false
+format = " [$hash$tag]($style)"
+style = "yellow"
+tag_symbol = " 🏷 "
+tag_disabled = false
+only_detached = true
+
+[git_state]
+disabled = false
+format = "[:](white)[$state( $progress_current/$progress_total)]($style)"
+style = "bright-red"
+rebase = "rebase"
+merge = "merge"
+revert = "revert"
+cherry_pick = "cherry-pick"
+bisect = "bisect"
+am = "am"
+am_or_rebase = "am/rebase"
+
+[git_status]
+disabled = false
+format = "$all_status$ahead_behind"
+conflicted = " [═](yellow)"
+ahead = " [⬆](bright-magenta)"
+behind = " [⬇](bright-magenta)"
+diverged = " [⬍](bright-magenta)"
+up_to_date = ""
+untracked = " [◼](white)"
+stashed = " [✭](cyan)"
+modified = " [✱](blue)"
+staged = " [✚](green)"
+renamed = " [➜](magenta)"
+deleted = " [✖](red)"
+typechanged = ""
+
+#################################################
+# Color palettes
+#################################################
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"

@@ -2,8 +2,8 @@
 theme = catppuccin-mocha.conf
 
 # Transparent background with blur
-background-opacity = 0.70
-background-blur = 50
+background-opacity = 0.90
+background-blur = 30
 
 # Fonts
 font-family = "JetBrainsMonoNL Nerd Font Mono"

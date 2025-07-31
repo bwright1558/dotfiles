@@ -10,7 +10,7 @@ font-family = "JetBrainsMonoNL Nerd Font Mono"
 font-size = 17
 
 # Scrollback
-scrollback-limit = 1000000
+scrollback-limit = 50000000
 
 # iTerm2 behavior and appearance (because that's where I'm coming from)
 window-inherit-working-directory = false

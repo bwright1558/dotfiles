@@ -2,15 +2,15 @@
 theme = catppuccin-mocha.conf
 
 # Transparent background with blur
-background-opacity = 0.90
-background-blur = 30
+# background-opacity = 0.90
+# background-blur = 30
 
 # Fonts
 font-family = "JetBrainsMonoNL Nerd Font Mono"
 font-size = 17
 
 # Scrollback
-scrollback-limit = 100000
+scrollback-limit = 1000000
 
 # iTerm2 behavior and appearance (because that's where I'm coming from)
 window-inherit-working-directory = false

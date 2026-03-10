@@ -7,7 +7,7 @@ theme = "catppuccin-mocha.conf"
 
 # Fonts
 font-family = "JetBrainsMonoNL Nerd Font Mono"
-font-size = 17
+font-size = 18
 
 # Scrollback
 # 0.5 GB for scrollback buffer size.
@@ -15,5 +15,7 @@ scrollback-limit = 536_870_912
 
 # iTerm2 behavior and appearance (because that's where I'm coming from)
 window-inherit-working-directory = false
+tab-inherit-working-directory = false
+split-inherit-working-directory = false
 macos-titlebar-style = "tabs"
 auto-update = "download"

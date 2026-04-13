@@ -1,5 +1,6 @@
 # Theme
 theme = "catppuccin-mocha.conf"
+custom-shader = "~/.config/ghostty/shaders/cursor_tail.glsl"
 
 # Transparent background with blur
 # background-opacity = 0.90

@@ -6,3 +6,6 @@ conf.d/rustup.fish
 
 # OrbStack adds code to config.fish. I moved this code to conf.d/orbstack.fish
 conf.d/orbstack.fish
+completions/orbctl.fish
+completions/docker.fish
+completions/kubectl.fish

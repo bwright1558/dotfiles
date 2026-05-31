@@ -2,3 +2,4 @@
 
 stow ghostty
 stow starship
+stow fish

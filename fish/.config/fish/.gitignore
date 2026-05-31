@@ -1,0 +1,8 @@
+# Variables exported via `set -Ux`. May contain sensitive information.
+fish_variables
+
+# Added automatically by the rust installer.
+conf.d/rustup.fish
+
+# OrbStack adds code to config.fish. I moved this code to conf.d/orbstack.fish
+conf.d/orbstack.fish

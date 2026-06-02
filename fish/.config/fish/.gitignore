@@ -9,3 +9,4 @@ conf.d/orbstack.fish
 completions/orbctl.fish
 completions/docker.fish
 completions/kubectl.fish
+completions/codex.fish

@@ -7,6 +7,7 @@ if status is-interactive
     # Abbreviations
     abbr -a v nvim
     abbr -a cls clear
+    abbr -a notes "cd ~/Notes"
 
     # Prompt
     starship init fish | source

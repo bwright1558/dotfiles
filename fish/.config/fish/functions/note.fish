@@ -9,7 +9,7 @@ function note
     mkdir -p "$notes_dir"
 
     if not test -f "$file"
-        sed "s/{{DATE}}/$today/g" "$template" >"$file"
+        sed "s/{{date}}/$today/g" "$template" >"$file"
     end
 
     nvim "$file"

@@ -8,7 +8,7 @@ function note
 
     mkdir -p "$notes_dir"
 
-    if not test -f "$file"
+    if not test -f "$file"; and test -f "$template"
         sed "s/{{date}}/$today/g" "$template" >"$file"
     end
 
